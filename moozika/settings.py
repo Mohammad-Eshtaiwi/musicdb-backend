@@ -25,7 +25,7 @@ SECRET_KEY = '^3ynk4*mktkrwj%6wq&72fz+o2ej0w+=hq3%@6u5z454q_n8(1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'api.apps.ApiConfig',
     'corsheaders',
-    'rest_framework',
+    'graphene_django'
 ]
 
 MIDDLEWARE = [
@@ -124,4 +124,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = False
-# CORS_ORIGIN_WHITELIST = ['http://localhost:3000']
+
+# GRAPHENE
+
+GRAPHENE = {
+    'SCHEMA': 'moozika.schema.schema',
+}
