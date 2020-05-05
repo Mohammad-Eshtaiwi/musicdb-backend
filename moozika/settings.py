@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'api.apps.ApiConfig',
     'corsheaders',
     'rest_framework',
+    'graphene_django'
 ]
 
 MIDDLEWARE = [
@@ -124,4 +125,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = False
-# CORS_ORIGIN_WHITELIST = ['http://localhost:3000']
+
+# GRAPHENE
+
+GRAPHENE = {
+    'SCHEMA': 'moozika.schema.schema',
+}
