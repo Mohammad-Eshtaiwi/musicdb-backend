@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'api.apps.ApiConfig',
     'corsheaders',
-    'rest_framework',
     'graphene_django'
 ]
 
