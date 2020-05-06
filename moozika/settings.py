@@ -128,5 +128,6 @@ CORS_ALLOW_CREDENTIALS = False
 # GRAPHENE
 
 GRAPHENE = {
+    'SCHEMA': 'django_root.schema.schema',
     'SCHEMA': 'moozika.schema.schema',
 }
